@@ -52,10 +52,13 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "django_project.urls"
 
+LOGIN_REDIRECT_URL = "home"
+LOGIN_REDIRECT_URL = "home"
+
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
