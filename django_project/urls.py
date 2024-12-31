@@ -24,7 +24,7 @@ urlpatterns = [
     # Custom accounts app URLs
     path("accounts/", include("accounts.urls")),
     # Built-in Django authentication URLs
-    path("auth/", include("django.contrib.auth.urls")),
+    path("accounts/", include("django.contrib.auth.urls")),
     # Home page
     path("", TemplateView.as_view(template_name="home.html"), name="home"),
 ]
