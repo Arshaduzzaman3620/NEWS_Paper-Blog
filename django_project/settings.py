@@ -91,6 +91,8 @@ DATABASES = {
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5" # new
 CRISPY_TEMPLATE_PACK = "bootstrap5" # ne
 
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
