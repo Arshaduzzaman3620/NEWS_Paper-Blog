@@ -37,11 +37,15 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "accounts",
+    #3rd party 
     "crispy_forms",
     "crispy_bootstrap5",
+    #local
+    "accounts",
     "pages",
+    "articles",
 ]
+TIME_ZONE ="Japan/Tokyo"
 
 
 AUTH_USER_MODEL ="accounts.CustomUser"
