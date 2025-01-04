@@ -38,7 +38,12 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "accounts",
+    "crispy_forms",
+    "crispy_bootstrap5",
+    "pages",
 ]
+
+
 AUTH_USER_MODEL ="accounts.CustomUser"
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -83,7 +88,8 @@ DATABASES = {
         "NAME": BASE_DIR / "db.sqlite3",
     }
 }
-
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5" # new
+CRISPY_TEMPLATE_PACK = "bootstrap5" # ne
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
