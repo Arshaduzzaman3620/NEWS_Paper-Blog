@@ -29,11 +29,11 @@ class ArticleDeleteView(DeleteView):  # new
     success_url = reverse_lazy("article_list")
 
 
-class ArticleCreateView(CreateView):  # new
-    model = Article
-    template_name = "article_new.html"
-    fields = (
-        "title",
-        "body",
-        "author",
-    )
+# class ArticleCreateView(CreateView):  # new
+#     model = Article
+#     template_name = "article_new.html"
+#     fields = (
+#         "title",
+#         "body",
+#         "author",
+#     )
